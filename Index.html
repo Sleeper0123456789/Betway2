@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BetFast Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b3d2e;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: #114f3a;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background: #ffd700;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>BetFast</h2>
+  <p>Login to continue</p>
+
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+
+  <button onclick="prank()">Login</button>
+
+  <div id="message"></div>
+</div>
+
+<script>
+  function prank() {
+    document.getElementById("message").innerHTML =
+      "😂 PRANK ALERT! <br>Relax, nothing was saved.";
+  }
+</script>
+
+</body>
+</html>
